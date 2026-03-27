@@ -1,0 +1,27 @@
+[
+  {
+    "id": "digital_item",
+    "description": "Digital items cannot be returned",
+    "condition": "is_digital"
+  },
+  {
+    "id": "final_sale",
+    "description": "Final-sale items cannot be returned",
+    "condition": "is_final_sale"
+  },
+  {
+    "id": "already_returned",
+    "description": "All units have already been returned",
+    "condition": "fully_returned"
+  },
+  {
+    "id": "return_window",
+    "description": "Return window has expired",
+    "condition": "past_return_window",
+    "threshold": {
+      "electronics": {"days": 30},
+      "apparel": {"days":  14},
+      "general": {"days":  30}
+    }
+  }
+]

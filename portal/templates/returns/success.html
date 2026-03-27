@@ -1,0 +1,17 @@
+{% extends "returns/base.html" %}
+
+{% block title %}Return Successful &mdash; Returns Portal{% endblock %}
+
+{% block content %}
+    <div class="card text-center" style="max-width: 480px; margin: 2rem auto; padding: 3rem 1.5rem;">
+        <div style="font-size: 4rem; margin-bottom: 1rem;">&#x2705;</div>
+        <h1 style="margin-bottom: 1rem;">Return Created Successfully</h1>
+        <p style="color: var(--color-text-secondary); margin-bottom: 2rem;">
+            Your return for order <strong>{{ order_number }}</strong> has been completed.
+        </p>
+        
+        <div>
+            <a href="{% url 'lookup' %}" class="btn btn-primary">Return to Home</a>
+        </div>
+    </div>
+{% endblock %}
