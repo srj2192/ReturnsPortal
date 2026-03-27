@@ -52,3 +52,4 @@ class RuleEvaluationInput:
     article: Article
     order: Order
     threshold: dict[str, Any]
+    now: datetime | None = None
